@@ -93,11 +93,7 @@ export default function BIDataConsultingWebsite() {
 
       <section>
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
-          <div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div>
             <div className="mb-6 inline-flex rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
               Power BI / QuickSight / AWS / Redshift / Glue
             </div>
@@ -143,12 +139,7 @@ export default function BIDataConsultingWebsite() {
             </div>
           </div>
 
-          <div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="relative"
-          >
+          <div className="relative">
             <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-6 shadow-2xl backdrop-blur-xl">
               <div className="rounded-[1.5rem] border border-white/10 bg-slate-900/80 p-6">
                 <p className="text-sm text-cyan-300">対応領域</p>
@@ -186,15 +177,11 @@ export default function BIDataConsultingWebsite() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {services.map((service, index) => {
+          {services.map((service) => {
             const Icon = service.icon;
             return (
               <div
                 key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: index * 0.08 }}
                 className="group rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-md transition hover:-translate-y-1 hover:bg-white/[0.07]"
               >
                 <div className="flex items-start justify-between gap-4">
