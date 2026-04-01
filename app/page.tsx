@@ -1,5 +1,4 @@
 import { Database, BarChart3, Wrench, ArrowRight, CheckCircle2, Sparkles, ShieldCheck, Clock3 } from "lucide-react";
-import { motion } from "framer-motion";
 
 export default function BIDataConsultingWebsite() {
   const services = [
@@ -94,7 +93,7 @@ export default function BIDataConsultingWebsite() {
 
       <section>
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -142,9 +141,9 @@ export default function BIDataConsultingWebsite() {
                 );
               })}
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
@@ -171,7 +170,7 @@ export default function BIDataConsultingWebsite() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -190,7 +189,7 @@ export default function BIDataConsultingWebsite() {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <motion.div
+              <div
                 key={service.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -223,7 +222,7 @@ export default function BIDataConsultingWebsite() {
                 >
                   このサービスを相談する <ArrowRight className="h-4 w-4" />
                 </a>
-              </motion.div>
+              </div>
             );
           })}
         </div>
