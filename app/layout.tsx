@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "BI Consulting Site",
   description: "BI・データ基盤の課題を実務目線で支援",
